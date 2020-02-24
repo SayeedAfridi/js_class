@@ -1,0 +1,13 @@
+{
+    "prettier.semi": false,
+    "prettier.tabWidth": 4,
+    "editor.formatOnSave": true,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira code",
+    "editor.fontSize": 16,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "prettier.singleQuote": true,
+    "prettier.jsxSingleQuote": true
+}
