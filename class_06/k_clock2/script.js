@@ -8,6 +8,10 @@ document.querySelector('.days').textContent = date.format(dd, 'dddd')
 
 setInterval(function() {
     var d = new Date()
-    hmsEl.textContent = date.format(d, 'h:mm:ss')
-    document.querySelector('.ampm').textContent = date.format(d, 'A')
+    var sep = '<span>:</span>'
+    if (d.getSeconds() % 2 === 0) {
+        sep = '<span style="opacity: 0;">:</span>'
+    }
+    hmsEl.innerHTML = date.format(d, 'h') + sep + date.format(d, 'mm')
+    document.querySelector('.ampm').textContent = date.format(d, 'A') === "p.m." ? "PM" : "AM"
 }, 1000)
