@@ -12,7 +12,7 @@ const containerEl = document.getElementById('newsContainer')
 
 const getNews = async () => {
     const res = await axios.get(
-        'http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=a544ad5325e049c78311f171bd16a8e6'
+        'http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=your_api_key'
     )
     console.log(res.data.articles.slice(0, 3))
     const threeNews = res.data.articles.slice(0, 3)
